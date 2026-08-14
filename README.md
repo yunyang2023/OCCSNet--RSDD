@@ -13,9 +13,10 @@ pip install -v -e .
 ## Training
 
 ```shell
-python mbyolo_train.py --task train --data ultralytics/cfg/datasets/coco.yaml \
- --config ultralytics/cfg/models/ocss/OCSS-T.yaml \
---amp  --project ./output_dir/mscoco --name OCSS
+python train.py --task train \
+  --data ultralytics/cfg/datasets/RSDDs.yaml \
+  --config ultralytics/cfg/models/ocss/OCSS-T.yaml \
+  --amp --project ./output_dir/rsdd --name OCSS
 ```
 
 ## Acknowledgement
